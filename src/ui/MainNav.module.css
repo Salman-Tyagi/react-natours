@@ -1,0 +1,73 @@
+.mainNav {
+  background-color: #444;
+  color: #f7f7f7;
+  padding: 2rem 5rem;
+  height: 8rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navList {
+  text-transform: uppercase;
+  list-style: none;
+  display: flex;
+  gap: 3rem;
+  align-items: center;
+}
+
+.user {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.user:hover {
+  filter: brightness(1.2);
+  transform: translateY(-2px);
+}
+
+.user img {
+  width: 3.4rem;
+  height: 3.4rem;
+  border-radius: 10rem;
+}
+
+.nameInitial {
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  width: 33px;
+  height: 33px;
+  border-radius: 10rem;
+  font-size: 2.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.navList > li > a {
+  display: inline-block;
+  font-size: 1.6rem;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 100rem;
+  padding: 0.8rem 1.6rem;
+  transition: all 0.4s;
+}
+
+.navList > li > a:hover {
+  background-color: #f7f7f7;
+  color: #444;
+}
+
+.logo {
+  height: 3.5rem;
+}
+
+:global(.active) {
+  background-color: #f7f7f7;
+  color: #444 !important;
+}

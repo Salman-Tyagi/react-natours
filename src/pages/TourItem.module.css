@@ -1,0 +1,113 @@
+.img {
+  width: 100%;
+  height: 100%;
+  min-height: 23.789rem;
+  overflow: hidden;
+}
+
+/* .overlay {
+  background-image: linear-gradient(
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  position: absolute;
+} */
+
+.tourCard {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  box-shadow: 0 0.5rem 0.8rem 0 rgba(24, 24, 24, 0.147);
+  border-radius: 0.2rem;
+  overflow: hidden;
+}
+
+.cardHeader {
+  position: relative;
+}
+
+.cardHeader > h3 {
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  opacity: 0.85;
+  font-size: 2.2rem;
+  position: absolute;
+  right: 3%;
+  top: 3%;
+}
+
+.summary h4 {
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.summary p {
+  font-size: 1.4rem;
+  min-height: 3.36rem;
+}
+
+.cardDetails {
+  padding: 1rem 1.8rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.description {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  row-gap: 1.8rem;
+  column-gap: 2rem;
+  font-size: 1.3rem;
+}
+
+.description div {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.description div span {
+  color: #55c57a;
+  font-size: 2rem;
+}
+
+.cardFooter {
+  background-color: #f7f7f7;
+  height: 10.56rem;
+  padding: 2.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.cardFooter div {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.3rem;
+  gap: 1rem;
+  color: #666;
+}
+
+.cardFooter a {
+  text-decoration: none;
+  color: #fff;
+  background-color: #55c57a;
+  font-size: 1.4rem;
+  padding: 1.5rem 3rem;
+  border-radius: 10rem;
+  text-transform: uppercase;
+  transition: all 0.3s;
+}
+
+.cardFooter a:hover {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.317);
+  transform: translateY(-2.8px);
+}

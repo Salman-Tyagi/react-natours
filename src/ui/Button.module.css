@@ -1,0 +1,31 @@
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 10rem;
+  font-family: inherit;
+  text-transform: uppercase;
+  color: #f7f7f7;
+  font-size: 1.7rem;
+  padding: 1rem 2.4rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  box-shadow: 0 0.4rem 0.8rem 0 rgba(0, 0, 0, 0.317);
+  transform: translateY(-2.8px);
+}
+
+.btn:active {
+  transform: none;
+}
+
+.primary {
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+}
+
+.danger {
+  background-image: linear-gradient(to right, #d5726f, #b42828);
+}

@@ -1,0 +1,34 @@
+.header {
+  position: relative;
+}
+
+.img {
+  max-width: 100%;
+  border-radius: 3px;
+}
+
+.tourDetails {
+  width: 100%;
+  font-size: 2.2rem;
+  padding: 2rem 0;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-transform: uppercase;
+  background-image: linear-gradient(
+    rgba(125, 213, 111, 0.85),
+    rgba(40, 180, 135, 0.85)
+  );
+  opacity: 0.85;
+  position: absolute;
+  top: 0;
+}
+
+.tourDetails h1 {
+  margin-right: 5%;
+}
+
+.tourDetails p {
+  margin-left: 1%;
+}

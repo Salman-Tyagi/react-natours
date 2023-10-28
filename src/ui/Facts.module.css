@@ -1,0 +1,48 @@
+.facts {
+  padding: 10.36rem 12.28rem;
+  color: #777;
+  font-size: 1.4rem;
+  justify-self: center;
+  display: flex;
+  flex-direction: column;
+  gap: 7rem;
+}
+
+.quickFacts h1 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.quickFacts ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 2.25rem;
+}
+
+.quickFacts ul li {
+  display: flex;
+  gap: 2.25rem;
+  align-items: center;
+}
+
+.quickFacts ul li span:first-child {
+  color: #55c57a;
+  font-size: 2rem;
+}
+
+.quickFacts li > strong {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.quickFacts ul li img {
+  width: 32px;
+  height: 32px;
+  border-radius: 10rem;
+}

@@ -1,0 +1,52 @@
+.cardTestimonials {
+  list-style: none;
+  display: flex;
+  background-color: #7dd56f;
+  margin: 10.3rem 0;
+  color: #777;
+  padding: 4.8rem;
+  gap: 2rem;
+  border-radius: 4px;
+  overflow-x: scroll;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 3px;
+  padding: 3.2rem;
+  text-align: center;
+  /* margin-bottom: 3rem; */
+}
+
+.testimonialImg {
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
+  margin: 0 auto;
+  display: block;
+  margin-bottom: 3rem;
+}
+
+.guideName {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.testimonialDesciption {
+  font-size: 1.4rem;
+  line-height: 1.4;
+  letter-spacing: 0.4px;
+  text-align: center;
+}
+
+.startList {
+  display: flex;
+  justify-content: center;
+  margin: 1.4rem;
+}
+
+.starRating {
+  font-size: 1.8rem;
+  list-style: none;
+  color: #45cb31;
+}

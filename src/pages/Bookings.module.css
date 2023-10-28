@@ -1,0 +1,26 @@
+.purchasedTourTitle {
+  font-size: 3.4rem;
+  text-align: center;
+  margin-bottom: 6.4rem;
+  text-transform: uppercase;
+}
+
+.bookings {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 5rem;
+  list-style: none;
+}
+
+.noTourBookings {
+  height: calc(100vh - 48vh);
+}
+
+.noTourBookings h1 {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.noTourBookings a {
+  text-decoration: none;
+}

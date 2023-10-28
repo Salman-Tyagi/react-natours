@@ -1,0 +1,115 @@
+.updateUserDataForm {
+  margin: 0 auto;
+  width: 80%;
+  background-color: #fff;
+  padding: 5rem 7rem;
+  border-radius: 5px;
+}
+
+.updateUserDataForm h2 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  font-weight: 700;
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 0.1rem;
+  line-height: 1.3;
+  margin-bottom: 3.5rem;
+  display: inline-block;
+}
+
+.updateUserDataForm label {
+  display: block;
+  font-family: inherit;
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+  color: #777;
+}
+
+.updateUserDataForm input {
+  display: block;
+  font-family: inherit;
+  font-size: 1.5rem;
+  color: #28b487;
+  padding: 1.25rem 1.75rem;
+  border: none;
+  width: 100%;
+  background-color: #f2f2f2;
+  border-radius: 4px;
+  margin-bottom: 2.5rem;
+  border: 2px solid #f2f2f2;
+}
+
+.updateUserDataForm input:hover {
+  border-bottom: 2px solid #28b487;
+}
+
+.updateUserDataForm input:focus {
+  border-bottom: 2px solid #28b487;
+}
+
+.fileInputContainer {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+}
+
+.updateUserDataForm input[type='file'] {
+  display: none;
+}
+
+.photoLabel {
+  color: #28b487 !important;
+  font-size: 1.6rem;
+  font-weight: 300 !important;
+  padding: 0.5rem;
+  border-bottom: 1px solid #28b487;
+  transition: all 0.3s;
+}
+
+.photoLabel:hover {
+  border-radius: 4px;
+  background-color: #28b487;
+  color: #fff !important;
+  cursor: pointer;
+}
+
+.userPhoto {
+  width: 7rem;
+  height: 7rem;
+  border-radius: 10rem;
+}
+
+.nameInitial {
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  width: 6rem;
+  height: 6rem;
+  border-radius: 10rem;
+  font-size: 2.6rem;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.label {
+  position: relative;
+  cursor: pointer;
+}
+
+.error {
+  font-family: inherit;
+  font-size: 1.4rem;
+  color: #e83a3a;
+  position: absolute;
+  right: 0;
+  bottom: 2%;
+}
+
+.btnUpdate {
+  margin-left: auto;
+  min-width: 19.481rem;
+  min-height: 4.08rem;
+}

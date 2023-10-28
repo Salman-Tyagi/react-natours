@@ -1,0 +1,21 @@
+.about {
+  padding: 10.36rem 12.28rem;
+  color: #777;
+  font-size: 1.6rem;
+  justify-self: center;
+  background-color: #f7f7f7;
+}
+
+.about h1 {
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  margin-bottom: 3.5rem;
+  background-image: linear-gradient(to right, #7dd56f, #28b487);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.about p {
+  line-height: 1.8;
+  font-size: 1.7rem;
+}
