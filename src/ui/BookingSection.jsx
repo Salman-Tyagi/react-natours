@@ -38,9 +38,9 @@ const BookingSection = ({ tour }) => {
       currency: 'INR',
       name: tour.name,
       description: tour.summary,
-      image: '/img/logo-green-round.png',
+      image: '/img/logo-green-small.png',
       order_id: order.id,
-      callback_url: `http://localhost:3000/api/v1/bookings/createBooking?tour=${tour.id}&user=${order.user._id}&price=${order.amount}`,
+      callback_url: `${BASE_API_URL}/api/v1/bookings/createBooking?tour=${tour.id}&user=${order.user._id}&price=${order.amount}`,
       redirect: true,
       prefill: {
         name: user.name,
@@ -60,7 +60,7 @@ const BookingSection = ({ tour }) => {
       <div className={styles.imageList}>
         <img
           className={`${styles.bookingImage} ${styles.logo}`}
-          src={`${BASE_API_URL}/img/logo-green-round.png`}
+          src='/img/logo-green-round.png'
           alt='logo green round'
         />
         <img

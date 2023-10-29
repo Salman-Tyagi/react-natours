@@ -46,7 +46,7 @@ export async function updateUserData(newData) {
     const data = res?.data;
     return data;
   } catch (err) {
-    console.error(err?.response);
+    // console.error(err?.response);
     return err?.response?.data;
   }
 }

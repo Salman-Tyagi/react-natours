@@ -26,8 +26,8 @@ function UpdateUserPasswordForm() {
     const res = await updateUserPassword(data);
 
     if (
-      res.status === 'fail' &&
-      res.message === 'Your current password is incorrect'
+      res?.status === 'fail' &&
+      res?.message === 'Your current password is incorrect'
     ) {
       toast.error(res.message, { id: 'error', duration: 3000 });
       setIsLoading(false);
@@ -35,17 +35,20 @@ function UpdateUserPasswordForm() {
     }
 
     if (
-      res.status === 'fail' &&
-      res.message === 'User recently changed password! Please login again'
+      res?.status === 'fail' &&
+      res?.message === 'User recently changed password! Please login again'
     ) {
-      toast.error(res.message, { id: 'fail' });
+      toast.error(
+        'User changed password more than 1 time! to secure your account please login again',
+        { id: 'fail', duration: 3000 }
+      );
       navigate('/login');
       localStorage.clear();
       setIsLoading(false);
       return;
     }
 
-    if (res.status === 'fail') {
+    if (res?.status === 'fail') {
       toast.error('Failed to update password', {
         id: 'failedToUpdate',
         duration: 1000,
@@ -54,10 +57,11 @@ function UpdateUserPasswordForm() {
       return;
     }
 
-    if (res.status === 'success')
+    if (res?.status === 'success') {
       toast.success('Password updated successfully');
+      reset();
+    }
 
-    reset();
     setIsLoading(false);
   }
 
