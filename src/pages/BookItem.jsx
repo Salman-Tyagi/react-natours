@@ -1,7 +1,6 @@
-import Spinner from '../ui/Spinner';
 import styles from './BookItem.module.css';
 
-function BookItem({ book = [] }) {
+function BookItem({ book }) {
   const {
     createdAt: date,
     orderId,
@@ -9,8 +8,6 @@ function BookItem({ book = [] }) {
     price,
     tour: { name: tourName },
   } = book;
-
-  if (!book.length) return <Spinner />;
 
   return (
     <li className={styles.bookItem}>
