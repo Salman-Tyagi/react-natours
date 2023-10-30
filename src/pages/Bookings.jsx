@@ -5,11 +5,13 @@ import { getCurrentUser } from '../services/apiAuth';
 import BookItem from './BookItem';
 
 import styles from './Bookings.module.css';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import Spinner from '../ui/Spinner';
+import toast from 'react-hot-toast';
 
 function Bookings() {
   const [bookings, setBookings] = useState([]);
+  const navigate = useNavigate();
   const [isLoading, setIsLoading] = useState(false);
   let user = getCurrentUser();
   const { user: userState } = useSelector(state => state.user);
@@ -23,6 +25,16 @@ function Bookings() {
       const res = await getAllBookings(user._id);
       if (res.status === 'success') {
         setBookings(res.data);
+      }
+
+      if (
+        res.status === 'fail' &&
+        res.message === 'User recently changed password! Please login again'
+      ) {
+        toast.error('You have changed password! Please login again', {
+          id: 'error',
+          duration: 2000,
+        });
       }
 
       setIsLoading(false);
